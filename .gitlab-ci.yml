@@ -6,7 +6,7 @@ deploy:
   stage: deploy
   script: 
     - mvn clean
-    - mvn complile
+    - mvn compile
     - mvn package
     - mvn install
     - mvn tomcat7:deploy
