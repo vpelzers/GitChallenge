@@ -7,4 +7,5 @@ deploy:
   script: 
     - mvn clean
     - mvn package
+    - mvn install
     - mvn tomcat7:deploy
