@@ -1,5 +1,3 @@
-image: rvancea/maven-chrome-jdk8
-
 stages: 
   - deploy
 deploy:
