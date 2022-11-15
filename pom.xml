@@ -575,7 +575,7 @@
            <uniqueVersion>false</uniqueVersion>
            <id>central</id>
            <name>Central</name>
-           <url>http://localhost:8081/repository/maven-central/<url>
+           <url>http://localhost:8081/repository/maven-central/</url>
            <layout>default</layout>
         </repository>
    </distributionManagement>
