@@ -569,12 +569,6 @@
             <name>Central</name>
             <url>http://localhost:8081/repository/maven-central/</url>
        </repository>
-    
-        <snapshotRepository>
-          <id>snapshots</id>
-          <name>Snapshots</name>
-          <url>http://localhost:8081/repository/maven-snapshots/</url>
-        </snapshotRepository>
     </repositories>
 
 </project>
