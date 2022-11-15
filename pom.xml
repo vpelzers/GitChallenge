@@ -316,7 +316,7 @@
                <artifactId>tomcat7-maven-plugin</artifactId>
                <version>2.2</version>
                <configuration>
-                   <url>http://10.243.1.111:2727/manager/text</url>
+                   <url>http://localhost:2727/manager/text</url>
                    <server>TomcatServer</server>
                    <username>tomcat</username>
                    <password>pass</password>
@@ -474,15 +474,7 @@
 
         </plugins>
     </build>
-        <distributionManagement>
-            <repository>
-            <uniqueVersion>false</uniqueVersion>
-            <id>corp1</id>
-            <name>Corporate Repository</name>
-            <url>https://repo.spring.io/milestone</url>
-            <layout>default</layout>
-         </repository>
-        </distributionManagement>
+
     <profiles>
         <profile>
             <id>H2</id>
@@ -571,6 +563,18 @@
             <name>Spring Milestone Repository</name>
             <url>https://repo.spring.io/milestone</url>
         </repository>
+
+        <repository>
+            <id>central</id>
+            <name>Central</name>
+            <url>http://localhost:8081/repository/maven-central/</url>
+       </repository>
+       
+        <snapshotRepository>
+          <id>snapshots</id>
+          <name>Snapshots</name>
+          <url>http://localhost:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
     </repositories>
 
 </project>
