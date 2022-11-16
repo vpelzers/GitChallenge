@@ -597,15 +597,13 @@
 
     <distributionManagement>
         <snapshotRepository>
-         <id>snapshots</id>
-         <name>Snapshots</name>
+         <id>nexusdeploymentrepo</id>
          <url>http://localhost:8081/repository/maven-snapshots/</url>
        </snapshotRepository>
 
        <repository>
-           <id>petclinic</id>
-           <name>pc</name>
-           <url>http://localhost:8081/repository/petclinic/</url>
+           <id>nexusdeploymentrepo</id>
+           <url>http://localhost:8081/repository/maven-releases/</url>
         </repository>
    </distributionManagement>
 
