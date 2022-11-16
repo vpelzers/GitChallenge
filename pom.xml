@@ -592,12 +592,12 @@
     <distributionManagement>
         <snapshotRepository>
          <id>nexusdeploymentrepo</id>
-         <url>http://localhost:8081/repository/maven-snapshots/</url>
+         <url>http://localhost:8081/repository/snapshots/</url>
        </snapshotRepository>
 
        <repository>
            <id>nexusdeploymentrepo</id>
-           <url>http://localhost:8081/repository/maven-releases/</url>
+           <url>http://localhost:8081/repository/releases/</url>
         </repository>
    </distributionManagement>
 
