@@ -4,12 +4,17 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.springframework.samples</groupId>
     <artifactId>spring-framework-petclinic</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.0-SNAPSHOT</version>
 
     <name>Spring Framework Petclinic</name>
     <packaging>war</packaging>
     <description>A Spring Framework application based on JSP, Spring MVC, Spring Data JPA, Hibernate and JDBC</description>
     <url>https://spring-petclinic.github.io/</url>
+    <scm>
+        <connection>scm:git:http://localhost:3030/root/GitChallenge</connection>
+        <url>http://localhost:3030/root/GitChallenge</url>
+        <developerConnection>scm:git:http://localhost:3030/root/GitChallenge</developerConnection>
+    </scm>
 
     <properties>
 
@@ -323,6 +328,16 @@
                    <path>/petclinic</path>
                    <update>true</update>
                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.4.2</version>
+                <configuration>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <releaseProfiles>releases</releaseProfiles>
+                </configuration>
             </plugin>
            <!--  <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
