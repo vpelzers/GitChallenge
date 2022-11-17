@@ -14,7 +14,7 @@ release:
   script: 
     - git config --global user.email valeria.pelzers@devoteam.com
     - git config --global user.name root
-    - mvn -B release:clean release:prepare -Dusername=root -Dpassword=gitlab2022
+    - mvn -B release:clean release:prepare release:perform -Dusername=root -Dpassword=gitlab2022
 
 deploy:
   stage: deploy
