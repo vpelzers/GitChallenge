@@ -11,7 +11,7 @@ prepare:
 release:
   stage: release
   script: 
-    - mvn -B release:clean release:prepare release:perform -Dusername=root -Dpassword=gitlab2022
+    - mvn -B release:clean release:prepare -Dusername=root -Dpassword=gitlab2022
 
 deploy:
   stage: deploy
