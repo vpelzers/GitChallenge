@@ -1,5 +1,3 @@
-git config --global user.email valeria.pelzers@devoteam.com
-git config --global user.name Valeria Pelzers
 
 stages: 
   - prepare
@@ -14,6 +12,8 @@ prepare:
 release:
   stage: release
   script: 
+    - git config --global user.email valeria.pelzers@devoteam.com
+    - git config --global user.name root
     - mvn -B release:clean release:prepare -Dusername=root -Dpassword=gitlab2022
 
 deploy:
