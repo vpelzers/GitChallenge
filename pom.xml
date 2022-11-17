@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.springframework.samples</groupId>
     <artifactId>spring-framework-petclinic</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.5-SNAPSHOT</version>
 
     <name>Spring Framework Petclinic</name>
     <packaging>war</packaging>
@@ -14,7 +13,8 @@
         <connection>scm:git:http://localhost:3030/root/GitChallenge</connection>
         <url>http://localhost:3030/root/GitChallenge</url>
         <developerConnection>scm:git:http://localhost:3030/root/GitChallenge</developerConnection>
-    </scm>
+      <tag>.1</tag>
+  </scm>
 
     <properties>
 
@@ -526,7 +526,7 @@
                 <jdbc.driverClassName>org.h2.Driver</jdbc.driverClassName>
                 <jdbc.url>jdbc:h2:mem:petclinic</jdbc.url>
                 <jdbc.username>sa</jdbc.username>
-                <jdbc.password/>
+                <jdbc.password />
             </properties>
             <dependencies>
                 <dependency>
@@ -545,7 +545,7 @@
                 <jdbc.driverClassName>org.hsqldb.jdbcDriver</jdbc.driverClassName>
                 <jdbc.url>jdbc:hsqldb:mem:petclinic</jdbc.url>
                 <jdbc.username>sa</jdbc.username>
-                <jdbc.password/>
+                <jdbc.password />
             </properties>
             <dependencies>
                 <dependency>

@@ -1,8 +1,19 @@
 stages: 
+  - prepare
+  - release
   - deploy
+prepare: 
+  stage: prepare
+  script:
+    - mvn clean
+    - mvn install
+
+release:
+  stage: release
+  script: 
+    - mvn -B release:clean release:prepare release:perform -Dusername=root -Dpassword=gitlab2022
+
 deploy:
   stage: deploy
   script: 
-    - mvn clean
-    - mvn install
     - mvn deploy
