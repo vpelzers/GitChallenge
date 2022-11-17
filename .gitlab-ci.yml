@@ -1,3 +1,6 @@
+git config --global user.email valeria.pelzers@devoteam.com
+git config --global user.name Valeria Pelzers
+
 stages: 
   - prepare
   - release
