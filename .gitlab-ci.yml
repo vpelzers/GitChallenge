@@ -1,6 +1,7 @@
 
 stages: 
   - prepare
+  - pom
   - release
   - deploy
 prepare: 
@@ -8,6 +9,12 @@ prepare:
   script:
     - mvn clean
     - mvn install
+
+#pom: 
+  #stage: pom
+  #script: 
+    #- sudo nano 
+    #- project.version + 0.1
 
 release:
   stage: release
