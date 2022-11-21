@@ -27,3 +27,5 @@ deploy:
   stage: deploy
   script: 
     - mvn deploy
+
+    test
