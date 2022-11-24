@@ -42,7 +42,7 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'release'
+    goals: '-B release:clean release:prepare release:perform -Dusername=root -Dpassword=gitlab2022'
 
 
 - task: Maven@3
