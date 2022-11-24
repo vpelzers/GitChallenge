@@ -7,7 +7,7 @@ trigger:
 - 'build-pipeline'
 
 pool:
-  name: 'petclinic'
+ 'petclinic'
 
 steps:
 - task: Maven@3
@@ -21,7 +21,6 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'clean'
 
-steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
@@ -33,7 +32,7 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
-    steps:
+
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
@@ -45,7 +44,7 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'release'
 
-    steps:
+
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
