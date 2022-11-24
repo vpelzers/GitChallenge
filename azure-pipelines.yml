@@ -7,7 +7,7 @@ trigger:
 - 'build-pipeline'
 
 pool:
- 'petclinic'
+ 'petclinicpool'
 
 steps:
 - task: Maven@3
