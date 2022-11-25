@@ -43,7 +43,7 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: '-B release:clean release:prepare release:perform -Dusername=vpelzers -Dpassword=devogit2022'
+    goals: '-B release:clean release:prepare release:perform -Dusername=vpelzers'
 
 
 - task: Maven@3
