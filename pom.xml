@@ -10,9 +10,9 @@
     <description>A Spring Framework application based on JSP, Spring MVC, Spring Data JPA, Hibernate and JDBC</description>
     <url>https://spring-petclinic.github.io/</url>
     <scm>
-        <connection>scm:git:http://localhost:3030/root/GitChallenge</connection>
-        <url>http://localhost:3030/root/GitChallenge</url>
-        <developerConnection>scm:git:http://localhost:3030/root/GitChallenge</developerConnection>
+        <connection>scm:git:https://github.com/vpelzers/GitChallenge</connection>
+        <url>https://github.com/vpelzers/GitChallenge</url>
+        <developerConnection>scm:git:https://github.com/vpelzers/GitChallenge</developerConnection>
     <tag>v1.0.6</tag>
   </scm>
 
