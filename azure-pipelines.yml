@@ -34,16 +34,16 @@ steps:
     goals: 'package'
 
 
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkUserInputPath: 'usr/lib/jvm/default-java'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: '-B release:clean release:prepare release:perform -Dusername=vpelzers -Dpassword=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'
+#- task: Maven@3
+ # inputs:
+  #  mavenPomFile: 'pom.xml'
+   # mavenOptions: '-Xmx3072m'
+    #javaHomeOption: 'JDKVersion'
+    #jdkUserInputPath: 'usr/lib/jvm/default-java'
+    #jdkArchitectureOption: 'x64'
+    #publishJUnitResults: true
+    #testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    #goals: '-B release:clean release:prepare release:perform -Dusername=vpelzers -Dpassword=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'
 
 - task: Maven@3
   inputs:
